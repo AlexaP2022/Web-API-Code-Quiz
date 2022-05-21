@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz Challenge</title>
+    <link rel ="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- Static Header Section will remain on screen -->
+    <header>
+        <input type="button" value="View High Scores" class="view-scores">
+        <p class="timer-count">Time:<span class="timer-count">75</span></p>
+    </header>
+    <main>
+        <!-- Introduction, Questions, and Answers -->
+    <div class="container">
+        <section id="intro">
+            <h1>Coding Quiz Challenge</h1>
+            <p>Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <div id=start>
+                <input type="button" value="Start Quiz" class="start-button">
+            </div>
+        </section>
+        
+        <section id = "quizcontainer">
+            <h3 id = "quiz-question"></h3>
+            <ul class = "answer-choices">
+                <li class="choice"><button id="A" class="answerbtn" value="0">Answer A</button></li>
+                <li class="choice"><button id="B" class="answerbtn" value="1">Answer B</button></li>
+                <li class="choice"><button id="C" class="answerbtn" value="2">Answer C</button></li>
+                <li class="choice"><button id="D" class="answerbtn" value="3">Answer D</button></li>
+            </ul>
+            <div id = "onscreen-answer-result"> <!-- on-screen answer will flash here for 1.5 seconds after selecting answer -->
+                <p></p>
+            </div>
+        </section>
+        <!-- Challenge Complete  -->
+        <section id="final">
+            <h2>Challenge Complete!</h2>
+            <p>Your final score is: <span id="score">0</span></p>
+            <p>Enter initials:<span><input placeholder="initials" id="initials"></span>
+                <input type="button" value="Submit" id="submitscore">
+            </p>
+        </section>
+        <!-- High Scores Section -  -->
+        <section id="highscores">
+            <h2>High Scores</h2>
+            <ol id="score-list">
+                <!-- Player score will append here via JS -->
+            </ol>
+        </section>
+    </div>
+    </main>
+    
+   
+<script src="script.js"></script>
+</body>
+</html>

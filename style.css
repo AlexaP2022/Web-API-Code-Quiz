@@ -1,0 +1,62 @@
+* {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+/* header styling that will remain on the page for the duration of the quiz*/
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+} 
+
+.view-scores {
+  
+    display: inline-block;
+    padding: 2px 8px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+header p, .timer-count {
+    text-align: end;
+    margin-top: 5px;
+}
+
+/* general mozilla block quote box shadow properties used via https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */ 
+.container {
+    padding: 20px;
+    box-shadow:
+         inset 0 -3em 3em rgba(0,0,0,0.1),
+               0 0  0 2px rgb(255,255,255),
+               0.3em 0.3em 1em rgba(0,0,0,0.3);
+    margin: 20px;
+
+}
+
+ul.answer-choices {
+    list-style-type: none;
+      
+}
+
+li {
+    margin: 10px;
+}
+/*hide sections until click events*/
+#quizcontainer, #final, #highscores,#onscreen-answer-result {
+    display: none;
+}
+/*General styling for buttons */
+.start-button, .view-scores, .answerbtn {
+    background-color: #e5e5e5;
+    border-color: grey;
+    
+}
+
+/* pseudoclasses used to change buttons on hover */
+.start-button:hover, .view-scores:hover, .answerbtn:hover {
+    background-color: #49AB81;
+    cursor: pointer;
+    color:#e5e5e5;
+}
+
+/* Media queries were deemed unnecesary for this particular project since shrinking the screen did not affect functionality
