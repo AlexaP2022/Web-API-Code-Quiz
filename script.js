@@ -29,32 +29,32 @@ var highScoresSection = document.querySelector("#highscores");
 var scoreListElement = document.querySelector("#score-list");
 var scoreList = [];
 
-//array used to store questions and answers, each indexed starting at zero.
+//Array used to store questions and answers, each indexed starting at zero.  Questions/Answers were taken from the mock example taken from the ReadMe.
 var questionsArray = [
 
     {
         question: "Commonly used data types DO NOT include:",
-        answers: ["1. Strings", "2. booleans", "3. alerts", "4. numbers"],
+        answers: ["A. Strings", "B. booleans", "C. alerts", "D. numbers"],
         correctAnswer: "2"
     },
     {
         question: "The condition in an if / else statement is enclosed within ________",
-        answers: ["1. quotes", "2. curly brackets", "3. parenthesis", "4. square brackets"],
+        answers: ["A. quotes", "B. curly brackets", "C. parenthesis", "D. square brackets"],
         correctAnswer: "1"
     },
     {
         question: "Arrays in JavaScript can be used to store _____.",
-        answers: ["1.numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
+        answers: ["A.numbers and strings", "B. other arrays", "C. booleans", "D. all of the above"],
         correctAnswer: "3"
     },
     {
         question: "String values must be enclosed within ____ when being assigned to variables",
-        answers: ["1.commas", "2. curly brackets", "3. quotes", "4. parenthesis"],
+        answers: ["A.commas", "B. curly brackets", "C. quotes", "D. parenthesis"],
         correctAnswer: "2"
     },
     {
         question: "A very useful tool used during development and debugging for printing content to the debugger is ________",
-        answers: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console.log"],
+        answers: ["A. JavaScript", "B. terminal/bash", "C. for loops", "D. console.log"],
         correctAnswer: "3"
     }
 ]
